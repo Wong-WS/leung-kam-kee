@@ -45,17 +45,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const img2 = imageContainers[1].querySelector('img');
         img2.src = galleryImages[nextIndex].src;
         img2.alt = galleryImages[nextIndex].alt;
+
+        // Update third image
+        const thirdIndex = (currentIndex + 2) % galleryImages.length;
+        const img3 = imageContainers[2].querySelector('img');
+        img3.src = galleryImages[thirdIndex].src;
+        img3.alt = galleryImages[thirdIndex].alt;
     }
 
     // Next button functionality
     nextBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex + 2) % galleryImages.length;
+        currentIndex = (currentIndex + 3) % galleryImages.length;
         updateGallery();
     });
 
     // Previous button functionality
     prevBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex - 2 + galleryImages.length) % galleryImages.length;
+        currentIndex = (currentIndex - 3 + galleryImages.length) % galleryImages.length;
         updateGallery();
     });
 
@@ -85,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Auto-advance gallery every 5 seconds
     setInterval(function() {
-        currentIndex = (currentIndex + 2) % galleryImages.length;
+        currentIndex = (currentIndex + 3) % galleryImages.length;
         updateGallery();
     }, 5000);
 

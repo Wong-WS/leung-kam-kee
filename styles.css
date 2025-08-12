@@ -1,420 +1,612 @@
 /* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navigation */
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 233, 224, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 233, 224, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo img {
-    height: 40px;
-    width: auto;
-    max-width: 150px;
+  height: 60px;
+  width: auto;
+  max-width: 200px;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #d2691e;
+  color: #d2691e;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-image {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem 3rem;
-    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 10px;
 }
 
 .hero-overlay h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-overlay p {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* About Section */
 .about {
-    padding: 100px 0;
-    background-color: #FFE9E0;
+  padding: 100px 0;
+  background-color: #ffe9e0;
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
 .about-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
 /* Gallery Section */
 .gallery {
-    padding: 100px 0;
-    background-color: #FF8C42;
-    text-align: center;
+  padding: 100px 0;
+  background-color: #ff8c42;
+  text-align: center;
 }
 
 .gallery h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: white;
-    font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: bold;
 }
 
 .gallery-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 0 2rem;
 }
 
 .carousel-btn {
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    color: #333;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #333;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .carousel-btn:hover {
-    background: white;
-    transform: scale(1.1);
+  background: white;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:active {
+  transform: scale(0.98);
+}
+
+.carousel-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.5;
+  pointer-events: none;
 }
 
 .gallery-images {
-    display: flex;
-    gap: 2rem;
-    flex: 1;
-    justify-content: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 1200px;
 }
 
 .image-container {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .gallery-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Contact Section */
 .contact {
-    padding: 100px 0;
-    background-color: #FFE9E0;
+  padding: 100px 0;
+  background-color: #ffe9e0;
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
 }
 
 .contact-info {
-    color: #333;
+  color: #333;
 }
 
 .contact-info h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-info > p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
 }
 
 .contact-item .icon {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .map-container {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .map-container iframe {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Responsive Design */
+/* Large tablets and small desktop */
+@media (max-width: 1024px) {
+  .gallery-carousel {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .image-container {
+    width: 320px;
+    height: 224px; /* Maintains 10:7 aspect ratio */
+  }
+}
+
 @media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .nav-links {
-        gap: 1rem;
-    }
-    
-    .hero-overlay h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-overlay p {
-        font-size: 1.2rem;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .about-image img {
-        height: 300px;
-    }
-    
-    .gallery-carousel {
-        flex-direction: row;
-        gap: 1rem;
-        align-items: center;
-    }
-    
-    .gallery-images {
-        gap: 1rem;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    .image-container {
-        width: 150px;
-        height: 150px;
-        flex-shrink: 0;
-    }
-    
-    .carousel-btn {
-        width: 48px;
-        height: 48px;
-        flex-shrink: 0;
-        min-width: 48px;
-        min-height: 48px;
-    }
-    
-    .carousel-btn svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+
+  .gallery-carousel {
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-images {
+    gap: 0.75rem;
+    max-width: calc(100% - 120px); /* Account for button space */
+  }
+
+  .image-container {
+    width: 200px;
+    height: 140px; /* Maintains 10:7 aspect ratio */
+    flex-shrink: 0;
+  }
+
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+
+  .carousel-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-overlay {
-        padding: 1rem 2rem;
-    }
-    
-    .hero-overlay h1 {
-        font-size: 2rem;
-    }
-    
-    .about, .gallery, .contact {
-        padding: 60px 0;
-    }
-    
-    .about-text h2,
-    .gallery h2,
-    .contact-info h2 {
-        font-size: 2rem;
-    }
-    
-    /* Keep gallery layout horizontal with buttons beside images */
-    .gallery-carousel {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0 10px;
-    }
-    
-    .gallery-images {
-        flex-direction: row;
-        gap: 0.5rem;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    .image-container {
-        width: 120px;
-        height: 120px;
-        flex-shrink: 0;
-    }
-    
-    .carousel-btn {
-        width: 44px;
-        height: 44px;
-        flex-shrink: 0;
-        min-width: 44px;
-        min-height: 44px;
-    }
-    
-    .carousel-btn svg {
-        width: 18px;
-        height: 18px;
-    }
+  .hero-overlay {
+    padding: 1rem 2rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .about,
+  .gallery,
+  .contact {
+    padding: 60px 0;
+  }
+
+  .about-text h2,
+  .gallery h2,
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  .gallery-carousel {
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-images {
+    gap: 0.5rem;
+    max-width: calc(100% - 100px); /* Account for button space */
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 160px;
+    height: 112px; /* Maintains 10:7 aspect ratio */
+    flex-shrink: 0;
+  }
+
+  .carousel-btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    z-index: 10;
+    touch-action: manipulation;
+  }
+
+  .carousel-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+  }
 }
 
 /* Additional mobile breakpoint for very small screens */
 @media (max-width: 360px) {
-    .gallery-carousel {
-        gap: 0.25rem;
-        padding: 0 5px;
-    }
-    
-    .gallery-images {
-        gap: 0.25rem;
-    }
-    
-    .image-container {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        min-height: 40px;
-    }
-    
-    .carousel-btn svg {
-        width: 16px;
-        height: 16px;
-    }
+  .container {
+    padding: 0 10px;
+  }
+  
+  .gallery-carousel {
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-images {
+    gap: 0.25rem;
+    max-width: calc(100% - 88px); /* Account for button space */
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 120px;
+    height: 84px; /* Maintains 10:7 aspect ratio */
+    flex-shrink: 0;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    z-index: 10;
+    touch-action: manipulation;
+  }
+
+  .carousel-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.5;
+  }
 }
 
 /* Smooth scrolling */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+/* Additional button styling to ensure circular shape */
+.carousel-btn {
+  aspect-ratio: 1/1;
+  border-radius: 50% !important;
+}
+
+/* Enhanced mobile touch and layout optimization */
+@media (max-width: 600px) {
+  .gallery-carousel {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .carousel-btn {
+    flex: 0 0 auto;
+    border-radius: 50% !important;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 10;
+    /* Enhanced touch target */
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .gallery {
+    padding: 60px 0;
+  }
+  
+  .gallery-carousel {
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery-images {
+    max-width: calc(100% - 120px);
+  }
+  
+  .image-container {
+    width: 180px;
+    height: 126px; /* Maintains 10:7 aspect ratio */
+  }
+  
+  .carousel-btn {
+    border-radius: 50% !important;
+    z-index: 10;
+  }
+}
+
+/* Ultra-wide screen optimization */
+@media (min-width: 1600px) {
+  .gallery-carousel {
+    gap: 4rem;
+  }
+  
+  .image-container {
+    width: 450px;
+    height: 315px;
+  }
 }
 
 /* Additional hidden images for carousel */
 .gallery-img.hidden {
-    display: none;
+  display: none;
+}
+
+/* Mobile-specific gallery optimizations */
+@media (max-width: 600px) {
+  /* Prevent horizontal scrolling */
+  .gallery {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure gallery container doesn't overflow */
+  .gallery .container {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+  /* Optimize image loading for mobile */
+  .gallery-img {
+    /* Force hardware acceleration for smooth transitions */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  /* Enhanced button interaction for touch devices */
+  .carousel-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+  }
+  
+  /* Ensure proper spacing on very small devices */
+  .gallery-carousel {
+    min-height: 140px; /* Ensure enough height for content */
+  }
+}
+
+/* Extra small devices (iPhone SE, etc.) */
+@media (max-width: 320px) {
+  .gallery-carousel {
+    gap: 0.25rem;
+    padding: 0 0.125rem;
+  }
+  
+  .gallery-images {
+    gap: 0.125rem;
+    max-width: calc(100% - 84px);
+  }
+  
+  .image-container {
+    width: 100px;
+    height: 70px; /* Maintains 10:7 aspect ratio */
+  }
+  
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+  }
+  
+  .carousel-btn svg {
+    width: 14px;
+    height: 14px;
+  }
 }
